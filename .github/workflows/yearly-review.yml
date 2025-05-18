@@ -7,6 +7,11 @@ on:
   # Allow manual triggering
   workflow_dispatch:
 
+# Add explicit permissions
+permissions:
+  issues: write
+  contents: read
+
 jobs:
   create-review-issue:
     runs-on: ubuntu-latest
