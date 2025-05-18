@@ -1,13 +1,41 @@
 # Ernesto's Axioms
 
-This document contains a curated collection of up to 10 quotes that resonate with Ernesto. Each quote has earned its place as a compass point for thought and action.
+A collection of quotes that serve as guiding principles for thought and action.
 
 ---
 
+### On Pleasure & Connection
+> "If something gives you pleasure and you are doing it alone, you are probably doing it wrong."
+> — Ernesto, inspired by *Dopamine Nation* (Anna Lembke)
+
+🗓️ Added: 2025-05-18  
+📝 ... pending
+
+---
+
+### On Stress & Meaning
+> "There is rarely stress without meaning and meaning without stress."
+> — Ernesto, inspired by *The Upside of Stress* (Kelly McGonigal)
+
+🗓️ Added: 2025-05-18  
+📝 ... pending
+
+---
+
+### On Life's Essentials
+> "Love and work... work and love, that's all there is."
+> — A paraphrase of Sigmund Freud
+
+🗓️ Added: 2025-05-18  
+📝 ... pending
+
+---
+
+### Template
 > "Quote here"
-> — Author (Source if needed)
+> — Author, *Source*
 
 🗓️ Added: YYYY-MM-DD  
-📝 Optional comment  
+📝 Optional comment
 
---- 
+---
