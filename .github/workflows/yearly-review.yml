@@ -17,26 +17,21 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             const year = new Date().getFullYear();
+            
             await github.rest.issues.create({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              title: `🕰️ Anniversary Review ${year}: Time to Revisit Your Axioms`,
-              body: `## Annual Axioms Review
-
-### Time for reflection
-
-Another year has passed, and it's time to revisit your axioms collection. 
-Consider the following:
-
-- Are there quotes you no longer resonate with?
-- Are there new quotes you've collected this year that should be added?
-- Should any quotes be promoted to "Shared Favorites"?
-- Are there quotes you've outgrown that should be retired?
-
-Remember the rules:
-- Max 10 quotes per person
-- Max 5 shared favorites
-- All retired quotes should include a reason
-
-Happy reflecting!`
+              title: "🕰️ Anniversary Review " + year + ": Time to Revisit Your Axioms",
+              body: "## Annual Axioms Review\n\n" +
+                    "### Time for reflection\n\n" +
+                    "Another year has passed, and it's time to revisit your axioms collection. Consider the following:\n\n" +
+                    "- Are there quotes you no longer resonate with?\n" +
+                    "- Are there new quotes you've collected this year that should be added?\n" +
+                    "- Should any quotes be promoted to \"Shared Favorites\"?\n" +
+                    "- Are there quotes you've outgrown that should be retired?\n\n" +
+                    "Remember the rules:\n" +
+                    "- Max 10 quotes per person\n" +
+                    "- Max 5 shared favorites\n" +
+                    "- All retired quotes should include a reason\n\n" +
+                    "Happy reflecting!"
             }); 
