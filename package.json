@@ -1,0 +1,24 @@
+{
+  "name": "mutual-axioms",
+  "version": "1.0.0",
+  "description": "A lifelong, curated collection of our most meaningful quotes",
+  "main": "index.js",
+  "scripts": {
+    "quotes": "node scripts/quotes.js",
+    "lint:md": "markdownlint *.md"
+  },
+  "keywords": [
+    "quotes",
+    "axioms",
+    "personal",
+    "philosophy"
+  ],
+  "author": "Adrian & Ernesto",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.2"
+  },
+  "devDependencies": {
+    "markdownlint-cli": "^0.33.0"
+  }
+} 

@@ -1,0 +1,42 @@
+name: Yearly Axioms Review
+
+on:
+  schedule:
+    # Run on January 1st at 9:00 UTC
+    - cron: '0 9 1 1 *'
+  # Allow manual triggering
+  workflow_dispatch:
+
+jobs:
+  create-review-issue:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create Anniversary Review Issue
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const year = new Date().getFullYear();
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `🕰️ Anniversary Review ${year}: Time to Revisit Your Axioms`,
+              body: `## Annual Axioms Review
+
+### Time for reflection
+
+Another year has passed, and it's time to revisit your axioms collection. 
+Consider the following:
+
+- Are there quotes you no longer resonate with?
+- Are there new quotes you've collected this year that should be added?
+- Should any quotes be promoted to "Shared Favorites"?
+- Are there quotes you've outgrown that should be retired?
+
+Remember the rules:
+- Max 10 quotes per person
+- Max 5 shared favorites
+- All retired quotes should include a reason
+
+Happy reflecting!`
+            }); 
